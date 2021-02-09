@@ -1,0 +1,17 @@
+<h3>To do list</h3>
+<input type="text" [(ngModel)]="newTodo" />
+<button
+  class="btn btn-primary"
+  (click)="addToList()"
+  [disabled]="isInputEmpty()"
+>
+  Add
+</button>
+<ul class="list-group">
+  <div *ngFor="let x of list; let indx = index">
+    <li class="list-group-item">{{ x }}</li>
+    <button class="btn btn-primary" (click)="deleteFromList(indx)">
+      Delete
+    </button>
+  </div>
+</ul>
