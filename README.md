@@ -1,6 +1,7 @@
 # TodoListApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.0.
+Run "npm install" to install all dependencies before running this app.
 
 ## Development server
 
